@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Fahkwang|Kodchasan|Mandali|Manjari:400,700&display=swap");
+* {
+  box-sizing: border-box;
+}
 
 body {
-  /* overflow: hidden; */
+  overflow: scroll;
   font-family: "Kodchasan", sans-serif;
   color: #505962;
+}
+
+.offset:before {
+  content: "";
+  display: block;
+  height: 4rem;
+  margin-top: -4rem;
 }
 
 /* ----Navigation---- */
@@ -58,6 +68,7 @@ body {
   /* border: 3px yellow solid; */
   text-align: left;
   margin: 0 2rem;
+  overflow: hidden;
 }
 
 .cd-words-wrapper b {
@@ -125,10 +136,8 @@ body {
 /*------ About section -------*/
 #about {
   background-color: #fff;
-  margin: 1rem;
-}
-.row {
-  padding: 2rem;
+  padding-top: 4rem;
+  margin-left: 8rem;
 }
 
 .about-img {
@@ -150,6 +159,144 @@ body {
   z-index: 1;
   -webkit-box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+}
+
+/* SKill Section Style */
+.narrow {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: 1rem;
+  padding-top: 2rem;
+  margin-left: 4rem;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: teal;
+  margin: 0 auto 2rem;
+}
+
+/* ICON COLORS */
+.skill .svg-inline--fa.fa-w-12 {
+  color: #e34f26;
+}
+.skill .svg-inline--fa.fa-w-16 {
+  color: #002561;
+}
+.skill .svg-inline--fa.fa-w-14 {
+  color: #f7df1e;
+}
+.skill .svg-inline--fa.fa-react.fa-w-16 {
+  color: #00d8ff;
+}
+.skill .svg-inline--fa.fa-node-js.fa-w-14 {
+  color: #215732;
+}
+/* ICON COLORS END */
+
+/* --------Projects Section STYLE----------- */
+.fixed {
+  background-image: url("img/project-bg.png"); /*free illustration from @mixkit.co*/
+  background-size: cover;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: cornsilk;
+  padding: 7rem 2rem;
+}
+
+.fixed-background h3 {
+  margin-bottom: 2rem;
+}
+
+/* ------------- Resume section --------------- */
+
+/* --------------- Resume section End ----------------- */
+
+/* --------- Contact Section ----------- */
+
+footer {
+  background-color: #40474e;
+  color: cornsilk;
+  padding: 2rem 0.2rem;
+  margin-top: 1rem;
+}
+
+footer img {
+  height: 4rem;
+  margin: 1.5rem 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem 0.5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+  color: aqua !important;
+}
+
+hr.socket {
+  width: 100%;
+  border-top: 0.2rem solid #666b71;
+  margin-top: 3rem;
+}
+
+/* -------------- Media Queries ----------- */
+@media (max-width: 767px) {
+  .caption h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .cd-headline.clip span {
+    font-size: 0.68rem;
+    padding-bottom: 1.6rem;
+    vertical-align: top;
+  }
+
+  #about {
+    margin: auto;
+    font-size: 1rem;
+  }
+
+  /* Skills FONT-SIZE */
+  #skills h3 {
+    font-size: 1.7rem;
+  }
+  #skills p {
+    font-size: 1rem;
+  }
+
+  .narrow {
+    margin: auto;
+  }
+
+  /* Projects FONT-SIZE */
+  #projects h3 {
+    font-size: 1.7rem;
+  }
+  #projects p {
+    font-size: 1rem;
+  }
+
+  #resume img {
+    width: 100%;
+  }
 }
 
 /* 
