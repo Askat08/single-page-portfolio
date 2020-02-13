@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Fahkwang|Kodchasan|Mandali|Manjari:400,700&display=swap");
+
+body {
+  /* overflow: hidden; */
+  font-family: "Kodchasan", sans-serif;
+  color: #505962;
+}
+
+/* ----Navigation---- */
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+
+.navbar-nav li {
+  padding-right: 0.4rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  padding-top: 0.2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: black;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+/* ----Landing Page---- */
+
+.home-inner {
+  background-image: url("img/bg-dark.png");
+  background-size: cover;
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: cornsilk;
+  text-transform: uppercase;
+}
+
+/*============ Text typing ============*/
+.banner-caption {
+  /* border: 3px yellow solid; */
+  text-align: left;
+  margin: 0 2rem;
+}
+
+.cd-words-wrapper b {
+  /* border: 2px white solid; */
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  /* left: 0; */
+  /* top: 0; */
+}
+
+.cd-words-wrapper b.is-visible {
+  /* border: 5px solid yellow; */
+  position: relative;
+}
+
+/* xclip */
+.cd-headline.clip span {
+  /* border: 2px red solid; */
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.cd-headline.clip b {
+  opacity: 0;
+}
+
+.cd-headline b.is-visible {
+  text-transform: none;
+  opacity: 1;
+  font-weight: normal;
+}
+
+/* text type css end */
+
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn {
+  margin: 1rem 2rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  padding: 0.5rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+/*------ About section -------*/
+#about {
+  background-color: #fff;
+  margin: 1rem;
+}
+.row {
+  padding: 2rem;
+}
+
+.about-img {
+  position: relative;
+}
+.about-img:before {
+  content: "";
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -5%;
+  left: -5%;
+  z-index: 0;
+}
+.about-img img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  -webkit-box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+}
+
+/* 
+font-family: 'Mandali', sans-serif;
+font-family: 'Manjari', sans-serif;
+font-family: 'Kodchasan', sans-serif;
+font-family: 'Fahkwang', sans-serif; */
+
+/* =====================BOOTSTRAP BREAK POINTS
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (Landscape phones, 576px and up)
+@media (min-sidth: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra Large (xl) devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+*/
