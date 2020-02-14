@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Fahkwang|Kodchasan|Mandali|Manjari:400,700&display=swap");
 * {
   box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -137,8 +140,9 @@ body {
 
 .caption .text-secondary {
   /* border-bottom: 2px solid #05ffe9; */
-  font-size: 2rem;
-  margin: 1rem;
+  color: #05ffe9 !important;
+  /* font-size: 4rem; */
+  /* margin: 1rem; */
 }
 
 .caption h3 {
@@ -166,6 +170,7 @@ body {
 
 .about-img {
   position: relative;
+  margin-top: 3rem;
 }
 .about-img:before {
   content: "";
@@ -204,24 +209,24 @@ h3.heading {
 .heading-underline {
   width: 3rem;
   height: 0.2rem;
-  background-color: teal;
+  background-color: #05ffe9;
   margin: 0 auto 2rem;
 }
 
 /* ICON COLORS */
-.skill .svg-inline--fa.fa-w-12 {
+.skill .fab.fa-html5 {
   color: #e34f26;
 }
-.skill .svg-inline--fa.fa-w-16 {
+.skill .fab.fa-css3 {
   color: #002561;
 }
-.skill .svg-inline--fa.fa-w-14 {
+.skill .fab.fa-js {
   color: #f7df1e;
 }
-.skill .svg-inline--fa.fa-react.fa-w-16 {
+.skill .fab.fa-react {
   color: #00d8ff;
 }
-.skill .svg-inline--fa.fa-node-js.fa-w-14 {
+.skill .fab.fa-node-js {
   color: #215732;
 }
 /* ICON COLORS END */
@@ -269,8 +274,8 @@ footer svg.svg-inline--fa {
   margin: 1.2rem 0.5rem 0 0;
 }
 
-footer svg.svg-inline--fa:hover {
-  color: aqua !important;
+footer a:hover {
+  color: #05ffe9 !important;
 }
 
 hr.socket {
