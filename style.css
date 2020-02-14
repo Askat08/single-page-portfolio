@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Fahkwang|Kodchasan|Mandali|Manjari:400,700&display=swap");
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  overflow: scroll;
+  overflow-x: hidden;
   font-family: "Kodchasan", sans-serif;
   color: #505962;
 }
@@ -30,20 +31,37 @@ body {
   height: 2rem;
 }
 
-.navbar-nav li {
-  padding-right: 0.4rem;
+.nav-pills {
+  font-size: 1rem;
+  /* border: aqua 2px solid; */
+  position: fixed;
+  right: 1.1rem;
+  padding: 0 0 1.4rem 6rem;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.nav-pills li {
+  padding: 0rem;
+}
+
+.navbar-dark .nav-pills .nav-item {
   color: #fff;
-  padding-top: 0.2rem;
+  padding-left: 1rem;
 }
 
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: black;
-  background-color: white;
-  border-radius: 1rem;
+.navbar-dark .nav-pills .nav-link {
+  color: #fff;
+  /* padding-left: 1rem; */
+}
+
+.navbar-dark .nav-pills .nav-link.active,
+.navbar-dark .nav-pills .nav-link:hover {
+  /* font-size: 1.01rem; */
+  border-bottom: 2px solid #05ffe9;
+  border-radius: 0;
+  /* padding: 0.55rem 1.01rem 0.55rem 1.201rem; */
+  background-color: transparent;
+  transform: translateX(-1px);
+  transition: all ease-in-out 0.3s;
 }
 
 /* ----Landing Page---- */
@@ -115,6 +133,12 @@ body {
   letter-spacing: 0.3rem;
   text-shadow: 0.1rem 0.1rem 0.8rem black;
   padding-bottom: 1rem;
+}
+
+.caption .text-secondary {
+  /* border-bottom: 2px solid #05ffe9; */
+  font-size: 2rem;
+  margin: 1rem;
 }
 
 .caption h3 {
@@ -257,6 +281,22 @@ hr.socket {
 
 /* -------------- Media Queries ----------- */
 @media (max-width: 767px) {
+  .navbar-brand img {
+    content: url("img/mobile-logo.png");
+    width: 30px;
+    margin-left: 0.5rem;
+    /* border: 1px solid red; */
+  }
+  .navbar-brand img:hover {
+    border: 2px solid transparent;
+    /* width: 40px; */
+  }
+
+  .navbar {
+    /* border: 1px solid white; */
+    padding: 0;
+  }
+
   .caption h1 {
     font-size: 1.5rem;
     letter-spacing: 0.15rem;
@@ -267,6 +307,34 @@ hr.socket {
     font-size: 0.68rem;
     padding-bottom: 1.6rem;
     vertical-align: top;
+  }
+
+  #navbarResponsive {
+    font-size: 0.1rem;
+    /* border: aqua 2px solid; */
+    text-transform: none;
+    font-size: 0.1rem;
+    letter-spacing: 1px;
+  }
+
+  #navbarResponsive ul {
+    padding: 0.5rem 0 0 0;
+  }
+
+  .navbar-dark .nav-pills .nav-item {
+    margin: 4px;
+    padding: 0;
+  }
+  .navbar-dark .nav-pills .nav-link {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 0;
+    margin: auto;
+  }
+
+  .navbar-dark .nav-pills .nav-link.active,
+  .navbar-dark .nav-pills .nav-link:hover {
+    padding: 0rem;
   }
 
   #about {
