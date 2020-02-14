@@ -2,11 +2,12 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 
 body {
   overflow-x: hidden;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   font-family: "Kodchasan", sans-serif;
   color: #505962;
 }
@@ -163,7 +164,7 @@ body {
 #about {
   background-color: #fff;
   padding-top: 4rem;
-  margin-left: 8rem;
+  /* margin-left: 8rem; */
 }
 
 .about-img {
@@ -194,7 +195,7 @@ body {
   width: 90%;
   margin: 1rem;
   padding-top: 2rem;
-  margin-left: 4rem;
+  /* margin-left: 0rem !important; */
 }
 
 h3.heading {
