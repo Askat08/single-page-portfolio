@@ -288,7 +288,7 @@ hr.socket {
   .navbar-brand img {
     content: url("img/mobile-logo.png");
     width: 30px;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     /* border: 1px solid red; */
   }
   .navbar-brand img:hover {
