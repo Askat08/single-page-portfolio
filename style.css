@@ -409,6 +409,16 @@ hr.socket {
     /* width: 40px; */
   }
 
+  /* ========== Scroll Arrow ============= */
+  section#scroll-arrow {
+    top: -9rem;
+  }
+
+  nav.fixed-top {
+    /* position: fixed; */
+    top: 40rem;
+  }
+
   .navbar {
     /* border: 1px solid white; */
     padding: 0;
