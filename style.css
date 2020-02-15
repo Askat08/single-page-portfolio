@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Fahkwang|Kodchasan|Mandali|Manjari:400,700&display=swap");
 * {
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
   overflow-x: hidden;
   overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  /* -webkit-overflow-scrolling: touch; */
   font-family: "Kodchasan", sans-serif;
   color: #505962;
 }
@@ -91,23 +91,45 @@ body {
   overflow: hidden;
 }
 
-.cd-words-wrapper b {
-  /* border: 2px white solid; */
+.hidden {
+  opacity: 0;
+}
+.console-container {
+  /* font-size: 1em; */
+  /* text-align: center; */
+  /* height: 200px; */
+  /* width: 600px; */
+  display: inline-block;
+  /* position: absolute; */
+  /* color: white; */
+  /* top: 0; */
+  /* bottom: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  /* margin: auto; */
+  /* vertical-align: top; */
+  text-transform: lowercase;
+}
+.console-underscore {
+  display: inline-block;
+  /* position: relative; */
+  /* top: -0.14em; */
+  left: 2px;
+}
+
+/* .cd-words-wrapper b {
   display: inline-block;
   position: absolute;
   white-space: nowrap;
-  /* left: 0; */
-  /* top: 0; */
+
 }
 
 .cd-words-wrapper b.is-visible {
-  /* border: 5px solid yellow; */
   position: relative;
-}
+} */
 
 /* xclip */
-.cd-headline.clip span {
-  /* border: 2px red solid; */
+/* .cd-headline.clip span {
   display: inline-block;
   font-size: 1.5rem;
 }
@@ -125,9 +147,96 @@ body {
   text-transform: none;
   opacity: 1;
   font-weight: normal;
-}
+} */
 
 /* text type css end */
+
+/* =============== Scroll Arrow ================= */
+section#scroll-arrow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section#scroll-arrow::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.8) 80%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.8) 80%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+#scroll-arrow a {
+  /* padding-top: 80px; */
+}
+#scroll-arrow a span {
+  position: absolute;
+  top: 0;
+  left: 3.3rem;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#scroll-arrow a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  top: 13rem;
+}
+#scroll-arrow a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+  top: 14rem;
+}
+#scroll-arrow a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  top: 15rem;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* =================== Scroll Arrow End ======================= */
 
 .caption h1 {
   font-size: 3.8rem;
@@ -136,6 +245,10 @@ body {
   text-shadow: 0.1rem 0.1rem 0.8rem black;
   padding-bottom: 1rem;
 }
+
+/* .city {
+  border-bottom: 1px solid #05ffe9;
+} */
 
 .caption .text-secondary {
   /* border-bottom: 2px solid #05ffe9; */
