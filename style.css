@@ -270,8 +270,10 @@ h3.heading {
 .skill .fab.fa-css3 {
   color: #002561;
 }
-.skill .fab.fa-js {
-  color: #f7df1e;
+.skill .fab.fa-js-square {
+  background-color: black;
+  /* border-radius: 1rem; */
+  color: #efda5b;
 }
 .skill .fab.fa-react {
   color: #00d8ff;
@@ -293,6 +295,7 @@ h3.heading {
 }
 
 /* --------Projects Section STYLE----------- */
+
 .fixed {
   background-image: url("img/project-bg.png"); /*free illustration from @mixkit.co*/
   background-size: cover;

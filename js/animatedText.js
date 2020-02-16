@@ -46,7 +46,7 @@ function consoleText(words, id) {
 // ================= Scroll arrow =======================
 
 $(function() {
-  $("a[href*=#]").on("click", function(e) {
+  $("scroll-arrow").on("click", function(e) {
     e.preventDefault();
     $("html, body").animate(
       { scrollTop: $($(this).attr("href")).offset().top },
@@ -55,5 +55,3 @@ $(function() {
     );
   });
 });
-
-// ================== Tooltip ===========================
