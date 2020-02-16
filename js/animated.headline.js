@@ -56,6 +56,11 @@ $(function() {
   });
 });
 
+// ================== Tooltip ===========================
+
+// $(document).ready(function(){
+//   $('.home').tooltip({title: "HUI", placement: "bottom"});
+
 // jQuery(document).ready(function($) {
 //   //set animation timing
 //   var animationDelay = 2500,
