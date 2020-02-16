@@ -501,7 +501,7 @@ hr.socket {
   }
   .mobile .nav-link.active,
   .mobile .nav-link:hover {
-    /* color: #e622ca; */
+    color: #e622ca;
     border-bottom: 1px solid #e622ca;
     border-radius: 0;
     /* padding: 0.55rem 1.01rem 0.55rem 1.201rem; */
