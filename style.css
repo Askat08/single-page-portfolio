@@ -103,38 +103,6 @@ body {
   left: 2px;
 }
 
-/* .cd-words-wrapper b {
-  display: inline-block;
-  position: absolute;
-  white-space: nowrap;
-
-}
-
-.cd-words-wrapper b.is-visible {
-  position: relative;
-} */
-
-/* xclip */
-/* .cd-headline.clip span {
-  display: inline-block;
-  font-size: 1.5rem;
-}
-
-.cd-headline.clip .cd-words-wrapper {
-  overflow: hidden;
-  vertical-align: top;
-}
-
-.cd-headline.clip b {
-  opacity: 0;
-}
-
-.cd-headline b.is-visible {
-  text-transform: none;
-  opacity: 1;
-  font-weight: normal;
-} */
-
 /* text type css end */
 
 /* =============== Scroll Arrow ================= */
@@ -230,15 +198,9 @@ section#scroll-arrow::after {
   padding-bottom: 1rem;
 }
 
-/* .city {
-  border-bottom: 1px solid #05ffe9;
-} */
-
 .caption .text-secondary {
   /* border-bottom: 2px solid #05ffe9; */
   color: #e622ca !important;
-  /* font-size: 4rem; */
-  /* margin: 1rem; */
 }
 
 .caption h3 {
@@ -264,7 +226,6 @@ section#scroll-arrow::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 8rem; */
 }
 
 #about .narrow {
@@ -276,21 +237,6 @@ section#scroll-arrow::after {
   margin-bottom: 5rem;
 }
 
-.about-img {
-  /* position: relative; */
-  /* margin-bottom: 2rem; */
-}
-/* .about-img:before {
-  content: "";
-  background-color: #f2f2f2;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: -5%;
-  top: -5%;
-  left: -5%;
-  z-index: 0;
-} */
 .about-img img {
   position: relative;
   width: 90%;
@@ -335,6 +281,17 @@ h3.heading {
 }
 /* ICON COLORS END */
 
+.progress {
+  /* border: 1px solid red; */
+  width: 30%;
+  background-color: white;
+  margin: auto;
+}
+
+.progress-bar {
+  background-color: #00b67a;
+}
+
 /* --------Projects Section STYLE----------- */
 .fixed {
   background-image: url("img/project-bg.png"); /*free illustration from @mixkit.co*/
@@ -372,11 +329,6 @@ footer img {
 footer a {
   color: white;
 }
-
-/* footer svg.svg-inline--fa {
-  font-size: 1.6rem;
-  margin: 1.2rem 0.5rem 0 0;
-} */
 
 footer a:hover {
   color: #e622ca !important;
@@ -469,10 +421,10 @@ hr.socket {
   }
 
   /* Projects FONT-SIZE */
-  #projects h3 {
+  #portfolio h3 {
     font-size: 1.7rem;
   }
-  #projects p {
+  #portfolio p {
     font-size: 1rem;
   }
 
@@ -501,11 +453,9 @@ hr.socket {
   }
   .mobile .nav-link.active,
   .mobile .nav-link:hover {
-    color: #e622ca;
+    color: #e622ca; /*#e622ca*/
     border-top: 1px solid #e622ca;
     border-radius: 0;
-    /* padding: 0.55rem 1.01rem 0.55rem 1.201rem; */
-    /* background-color: transparent; */
     transform: translateX(-1px);
     transition: all ease-in-out 0.3s;
   }

@@ -35,7 +35,7 @@
               <a href="#skills" class="nav-link" data-toggle="tooltip" title="Skills">Skills</a> <!--<i class="fas fa-user-cog fa-2x"></i>-->
             </li>
             <li class="nav-item">
-              <a href="#projects" class="nav-link" data-toggle="tooltip" title="Projects">Projects</a> <!--<i class="fas fa-image fa-2x"></i>-->
+              <a href="#portfolio" class="nav-link" data-toggle="tooltip" title="Portfolio">Portfolio</a> <!--<i class="fas fa-image fa-2x"></i>-->
             </li>
             <li class="nav-item">
               <a href="#contact" class="nav-link" data-toggle="tooltip" title="Contact">Contact</a> <!--<i class="fas fa-phone-square fa-2x"></i>-->
@@ -58,7 +58,7 @@
           <a href="#skills" class="nav-link" data-toggle="tooltip" title="Skills"><i class="fas fa-user-cog fa-2x"></i></a> <!--<i class="fas fa-user-cog fa-2x"></i>-->
         </li>
         <li class="nav-item">
-          <a href="#projects" class="nav-link" data-toggle="tooltip" title="Projects"><i class="fas fa-image fa-2x"></i></a> <!--<i class="fas fa-image fa-2x"></i>-->
+          <a href="#portfolio" class="nav-link" data-toggle="tooltip" title="Portfolio"><i class="fas fa-image fa-2x"></i></a> <!--<i class="fas fa-image fa-2x"></i>-->
         </li>
         <li class="nav-item">
           <a href="#contact" class="nav-link" data-toggle="tooltip" title="Contact"><i class="fas fa-phone-square fa-2x"></i></a> <!--<i class="fas fa-phone-square fa-2x"></i>-->
@@ -164,7 +164,9 @@
                   data-fa-transform="shrink-3 up-5"
                 ></i>
                 <h3>HTML</h3>
-                <p>Used to create the actual content of the page</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                </div>
               </div>
             </div>
             <!-- CSS ICON -->
@@ -175,7 +177,9 @@
                   data-fa-transform="shrink-3 up-5"
                 ></i>
                 <h3>CSS</h3>
-                <p>Used to for the design or style of the website</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                </div>
               </div>
             </div>
             <!-- JAVASCRIPT ICON -->
@@ -186,7 +190,9 @@
                   data-fa-transform="shrink-3 up-5"
                 ></i>
                 <h3>JavaScript</h3>
-                <p>Making the website dynamic and interactive</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                </div>
               </div>
             </div>
             <!-- REACT JS ICON -->
@@ -197,7 +203,9 @@
                   data-fa-transform="shrink-3 up-5"
                 ></i>
                 <h3>React</h3>
-                <p>Improving the website's performance</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                </div>
               </div>
             </div>
             <!-- NODE JS ICON -->
@@ -208,10 +216,9 @@
                   data-fa-transform="shrink-3 up-5"
                 ></i>
                 <h3>NodeJS</h3>
-                <p>
-                  Making fast and scalable API's to fetch data from databases,
-                  authentication, making Real-Time applications...
-                </p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+                </div>
               </div>
             </div>
           <!-- Row End -->
@@ -223,7 +230,7 @@
     <!-- Skills Section End -->
 
     <!-- Projects Section -->
-    <section id="projects" class="offset pt-100 pb-70">
+    <section id="portfolio" class="offset pt-100 pb-70">
       <div class="fixed-background"> <!-- FIxed Background-->
         
         <div class="row dark text-center"> <!-- Row Dark-->
@@ -327,11 +334,13 @@
     <!-- script files -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    <script src="js/animated.headline.js"></script>
+    <script src="js/animatedText.js"></script>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scroll.js"></script>
+
+    <!-- Bootstrap JS tooltip -->
     <script>
       $(document).ready(function(){
       $('.home').tooltip({placement: "bottom"}) 
