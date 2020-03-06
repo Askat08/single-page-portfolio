@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
 
     <!-- css files  -->
-    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/fixed.css" />
+    <link rel="stylesheet" href="css/resume.css" />
   </head>
   <body data-spy="scroll" data-target="#navbarResponsive">
     <!-- Home Section -->
@@ -118,10 +119,9 @@
             <h3>About me</h3>
             <div class="heading-underline"></div>
             <p class="lead">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-              quae, soluta accusamus veniam ex sapiente quod voluptas rem
-              perspiciatis non necessitatibus iusto, adipisci in id dolore! Id
-              dolorem sapiente explicabo!
+              👋
+              , I'm a self-taught web developer.
+              Highly motivated to learn new things. I love to create beautiful and productive applications/websites.
             </p>
           </div>
         </div>
@@ -320,10 +320,35 @@
                 <p class="icon-links">
                   <a href='#' target="_blank"><span class="fa fa-code"></span></a>
                   <a href="#" target="_blank"><span class="fa fa-eye"></span></a>
-                  <a type="button" data-toggle="modal" data-target="#fittrack">
+                  <a type="button" data-toggle="modal" data-target="#twitterclone">
                     <span class='fas fa-info-circle'></span>
                   </a> 
                 </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="twitterclone" tabindex="-1" role="dialog" aria-labelledby="twitterclone" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="twittercloneTitle">Twitter-clone</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-info">
+                  <p>Full stack twitter clone.</p>
+                  <ul class="list-group"> 
+                    <string class="text-dark">Frontend:</string>
+                    <li class="list-group-item list-group-item-info"><i class="fab fa-react"></i> ReactJS</li>
+                    <strong class='text-dark'>Backend:</strong>
+                    <li class="list-group-item list-group-item-info"><i class="fab fa-node"></i> NodeJS</li>
+                    <li class="list-group-item list-group-item-info"><i class="fab fa-node-js"></i> ExpressJS</li>
+                    <li class="list-group-item list-group-item-info"><i class="fas fa-database"></i> MongoDB Atlas</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -349,15 +374,15 @@
           <div class="heading-underline"></div> 
         </div>
 
-        <div class="row"> <!-- Row -->
-          <div class="col-md-6">
+        <div class="col-12"> <!-- Row -->
+          <div class="col-12">
             <div class="row">
               <!--https://icons8.com-->
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <img src="img/coming-soon.png" alt="coming soon">
               </div>
-              <div class="col-md-8">
-                <h4>Coming soon...</h4>
+              <div class="col-md-6 text-center">
+                <a href="./img/ab-cv.pdf" class='resume' target="_blank">Resume</a>
               </div>
             </div>
           </div>
@@ -376,7 +401,7 @@
 
           <div class="col-md-5 text-center">
             <img src="img/A-logo2.png" alt="Logo">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus est maiores sapiente vero vitae deserunt laboriosam quia culpa rerum mollitia nobis quod, ipsam fugit incidunt, iste adipisci eius ipsum harum!</p>
+            <p>some text...</p>
             <strong>Contact Info</strong>
             <p>+1 (646) 705 5176 <br> askatbakyev@gmail.com</p>
             <a href="#" target=""><i class="fab fa-facebook-square fa-2x"></i></a>

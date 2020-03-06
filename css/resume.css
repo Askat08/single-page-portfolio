@@ -1,0 +1,18 @@
+a.resume {
+  background-color: gray;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.resume:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+a.resume:active {
+  box-shadow: none;
+  top: 5px;
+}
