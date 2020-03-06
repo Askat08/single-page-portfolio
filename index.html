@@ -227,36 +227,103 @@
           </div>
 
           <!-- Project box -->
-          <div class="card-deck">
-            <div class="card dark p-3">
-              <a href="https://fittrackapp.herokuapp.com/" target="_blank" ><img class="card-img-top" src="./img/fittrack.gif" alt="FitTracker"></a>
-              <div class="card-body">
-                <h5 class="card-title">FitTracker App</h5>
-                <p class="card-text">This is FitTrack app.</p>     
-                <a href='https://github.com/Askat08/fit-tracker' target="_blank"><button type="button" class="btn btn-outline-info">Code</button></a>
-                <a href="https://fittrackapp.herokuapp.com/" target="_blank"><button type="button" class="btn btn-outline-info">Live</button> </a>     
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 m-auto">
+            <div class="hovereffect">
+              <img class="img-thumbnail" src="./img/fittrack.gif" alt="FitTracker">
+              <div class="overlay">
+                <h2 class="card-title">FitTrack</h2>
+                <p class="icon-links">   
+                  <a href='https://github.com/Askat08/fit-tracker' target="_blank"><span class="fa fa-code"></span></a>
+                  <a href="https://fittrackapp.herokuapp.com/" target="_blank"><span class="fa fa-eye"></span></a>
+                    <a type="button" data-toggle="modal" data-target="#fittrack">
+                      <span class='fas fa-info-circle'></span>
+                    </a>   
+                </p>   
               </div>
             </div>
-
-            <!-- Project box -->
-            <div class="card dark p-3">
-              <a href="https://mighty-bastion-61449.herokuapp.com/" target="_blank"><img class="card-img-top" src="./img/xpns.gif" alt="XPNS"></a>
-              <div class="card-body">
-                <h5 class="card-title">XPNS App</h5>
-                <p class="card-text">Manage your daily expenses.</p>
-                <a href='https://github.com/Askat08/exp-track' target="_blank"><button type="button" class="btn btn-outline-info">Code</button></a>
-                <a href="https://mighty-bastion-61449.herokuapp.com/" target="_blank"><button type="button" class="btn btn-outline-info">Live</button> </a>   
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="fittrack" tabindex="-1" role="dialog" aria-labelledby="fittrack" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="fittrackTitle">FitTrack App</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-info">
+                  <p>Essential exercises will keep you healthy. MERN stack app.</p>
+                  <ul class="list-group"> 
+                    <string class="text-dark">Frontend:</string>
+                    <li class="list-group-item list-group-item-info"><i class="fab fa-react"></i> ReactJS</li>
+                    <li class="list-group-item list-group-item-info"><i class="fab fa-css3"></i> CSS</li>
+                    <strong class='text-dark'>Backend:</strong>
+                    <li class="list-group-item list-group-item-info"><i class="fab fa-node"></i> NodeJS</li>
+                    <li class="list-group-item list-group-item-info"><i class="fab fa-node-js"></i> ExpressJS</li>
+                    <li class="list-group-item list-group-item-info"><i class="fas fa-database"></i> MongoDB Atlas</li>
+                  </ul>
+                </div>
               </div>
             </div>
+          </div>
 
             <!-- Project box -->
-            <div class="card dark p-3">
-              <img class="card-img-top" src="#" alt="twitter-clone">
-              <div class="card-body">
-                <h5 class="card-title">Twitter-clone</h5>
-                <p class="card-text">Coming soon.</p>
-                <a href='#' target="_blank"><button type="button" class="btn btn-outline-info">Code</button></a>
-                <a href="#" target="_blank"><button type="button" class="btn btn-outline-info">Live</button> </a>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 m-auto">
+            <div class="hovereffect">
+              <img class="img-thumbnail" src="./img/xpns.gif" alt="XPNS">
+              <div class="overlay">
+                <h2 class="card-title">XPNS App</h2>
+                <p class="icon-links">
+                  <a href='https://github.com/Askat08/exp-track' target="_blank"><span class="fa fa-code"></span></a>
+                  <a href="https://mighty-bastion-61449.herokuapp.com/" target="_blank"><span class="fa fa-eye"></span></a>  
+                  <a type="button" data-toggle="modal" data-target="#xpns">
+                    <span class='fas fa-info-circle'></span>
+                  </a>  
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="xpns" tabindex="-1" role="dialog" aria-labelledby="xpns" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="xpnsTitle">XPNS App</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-info">
+                  <p>This is full stack Expense tracker app.</p>
+                  <ul class="list-group"> 
+                    <string class="text-dark">Frontend:</string>
+                    <li class="list-group-item list-group-item-info"><i class="fab fa-react"></i> ReactJS</li>
+                    <li class="list-group-item list-group-item-info"><i class="fab fa-css3"></i> CSS</li>
+                    <strong class='text-dark'>Backend:</strong>
+                    <li class="list-group-item list-group-item-info"><i class="fab fa-node"></i> NodeJS</li>
+                    <li class="list-group-item list-group-item-info"><i class="fab fa-node-js"></i> ExpressJS</li>
+                    <li class="list-group-item list-group-item-info"><i class="fas fa-database"></i> MongoDB Atlas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- Project box -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 m-auto">
+            <div class="hovereffect">
+              <img class="img-thumbnail" src="./img/twit-clone.gif" alt="twitter-clone">
+              <div class="overlay">
+                <h2>Twit-clone</h2>
+                <p class="icon-links">
+                  <a href='#' target="_blank"><span class="fa fa-code"></span></a>
+                  <a href="#" target="_blank"><span class="fa fa-eye"></span></a>
+                  <a type="button" data-toggle="modal" data-target="#fittrack">
+                    <span class='fas fa-info-circle'></span>
+                  </a> 
+                </p>
               </div>
             </div>
           </div>

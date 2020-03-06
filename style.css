@@ -243,8 +243,10 @@ section#scroll-arrow::after {
   height: 90%;
   z-index: 1;
   border-radius: 7px;
-  -webkit-box-shadow: -10px 7px 10px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: -10px 7px 10px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: -10px 7px 10px 1px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* SKill Section Style */
