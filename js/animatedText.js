@@ -1,5 +1,8 @@
 // function([string1, string2],target id,[color1,color2])
-consoleText(["Web Developer", "Computer Tech", "Self-taught student."], "text");
+consoleText(
+  ["Web Developer", "Computer Specialist", "Self-taught student."],
+  "text"
+);
 
 function consoleText(words, id) {
   var visible = true;
@@ -8,11 +11,11 @@ function consoleText(words, id) {
   var x = 1;
   var waiting = false;
   var target = document.getElementById(id);
-  window.setInterval(function() {
+  window.setInterval(function () {
     if (letterCount === 0 && waiting === false) {
       waiting = true;
       target.innerHTML = words[0].substring(0, letterCount);
-      window.setTimeout(function() {
+      window.setTimeout(function () {
         var usedWord = words.shift();
         words.push(usedWord);
         x = 1;
@@ -21,7 +24,7 @@ function consoleText(words, id) {
       }, 1000);
     } else if (letterCount === words[0].length + 1 && waiting === false) {
       waiting = true;
-      window.setTimeout(function() {
+      window.setTimeout(function () {
         x = -1;
         letterCount += x;
         waiting = false;
@@ -31,7 +34,7 @@ function consoleText(words, id) {
       letterCount += x;
     }
   }, 120);
-  window.setInterval(function() {
+  window.setInterval(function () {
     if (visible === true) {
       con.className = "console-underscore hidden";
       visible = false;
@@ -45,8 +48,8 @@ function consoleText(words, id) {
 
 // ================= Scroll arrow =======================
 
-$(function() {
-  $("scroll-arrow").on("click", function(e) {
+$(function () {
+  $("scroll-arrow").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       { scrollTop: $($(this).attr("href")).offset().top },
