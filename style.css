@@ -226,6 +226,7 @@ section#scroll-arrow::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 #about .narrow {
@@ -265,6 +266,18 @@ h3.heading {
   margin: 0 auto 2rem;
 }
 
+#skills {
+  min-height: 100vh;
+  background-color: #ddd;
+}
+
+#portfolio {
+  min-height: 100vh;
+}
+
+#resume {
+  min-height: 100vh;
+}
 /* ICON COLORS */
 .skill .fab.fa-html5 {
   color: #e34f26;
