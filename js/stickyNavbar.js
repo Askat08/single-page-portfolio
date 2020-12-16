@@ -1,5 +1,5 @@
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {
+window.onscroll = function () {
   fixedTop();
 };
 
